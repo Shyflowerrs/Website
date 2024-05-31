@@ -33,11 +33,7 @@ const Particle = () => {
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "#0d47a1",
-                    },
-                },
+
                 fpsLimit: 120,
                 interactivity: {
                     events: {
@@ -63,13 +59,13 @@ const Particle = () => {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#987070",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "C39898",
                         distance: 150,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 1,
                         width: 1,
                     },
                     move: {
