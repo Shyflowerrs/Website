@@ -30,7 +30,7 @@ const Particle = () => {
 
     return (
          init && <Particles
-            id="tsparticles"
+            id="tsparticles" className="absolute z-1"
             particlesLoaded={particlesLoaded}
             options={{
 
@@ -47,6 +47,10 @@ const Particle = () => {
                         },
                         resize: true,
                     },
+                    fullScreen: {
+                        enable: false,
+                        zIndex: -1,
+                      },
                     modes: {
                         push: {
                             quantity: 4,

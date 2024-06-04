@@ -1,10 +1,6 @@
 import { text } from "stream/consumers";
 import Particle from "../components/Particles/Particles";
-
 import Image from "next/image";
-
-const headerText : String = "Hello, I'm &nbsp Chelsea, <br/> I'm a fullstack web developer";
-
 
 export default function Home() {
   return (
@@ -12,6 +8,7 @@ export default function Home() {
 
     <header className="bg-mainBG  whitespace-pre  h-screen justify-center flex items-center">
       <p className="text-bold text-6xl text-center">
+      <Particle/>
         Hello, I'm Chelsea, <br/>
         I'm a fullstack web developer <br/>
         <a href="#about" className="text-lg border-solid border-2 border-[#DBB5B5] p-2">Check out my work</a>
@@ -21,9 +18,9 @@ export default function Home() {
 
       </p>
 
-      <Particle/>
+
     </header>
-    <main className="bg-mainBG h-screen" id="about">
+    <main className="bg-mainBG h-screen z-2" id="about">
       <h1 className="text-bold text-6xl text-center">ABOUT ME</h1>
     <div className="container mx-auto columns-2">
   <p>
