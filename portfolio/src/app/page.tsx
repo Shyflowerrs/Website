@@ -14,7 +14,7 @@ export default function Home() {
       <p className="text-bold text-6xl text-center">
         Hello, I'm Chelsea, <br/>
         I'm a fullstack web developer <br/>
-        <a href="#about" className="border-2">tbasd</a>
+        <a href="#about" className="text-lg border-solid border-2 border-[#DBB5B5] p-2">Check out my work</a>
       </p>
       <p className=" justify-center flex ">
 
