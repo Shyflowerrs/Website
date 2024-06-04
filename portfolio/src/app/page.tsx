@@ -10,16 +10,21 @@ export default function Home() {
   return (
     <>
 
-    <header className="bg-mainBG">
-      <p className="  text-bold text-6xl text-center h-screen justify-center flex items-center">
+    <header className="bg-mainBG  whitespace-pre  h-screen justify-center flex items-center">
+      <p className="text-bold text-6xl text-center">
         Hello, I'm Chelsea, <br/>
-        I'm a fullstack web developer <br />
+        I'm a fullstack web developer <br/>
+        <a href="#about" className="border-2">tbasd</a>
+      </p>
+      <p className=" justify-center flex ">
+
 
       </p>
+
       <Particle/>
     </header>
     <main className="bg-mainBG">
-
+testcsdasdads
     </main>
 
     </>
