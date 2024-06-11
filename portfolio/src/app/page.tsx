@@ -15,8 +15,9 @@ export default function Home() {
       </p>
 
     </header>
-    <div className="bg-mainBG h-screen z-2" id="about">
-      <h1 className="text-bold text-6xl  text-center">ABOUT ME</h1>
+
+    <div className="bg-mainBG " id="about">
+      <h1 className="text-bold  text-2xl sm:text-5xl lg:text-6xl text-center">ABOUT ME</h1>
     <div className="container mx-auto columns-2">
   <p>
   What is Lorem Ipsum?
