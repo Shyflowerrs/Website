@@ -6,22 +6,17 @@ export default function Home() {
   return (
     <>
 
-    <header className="bg-mainBG  whitespace-pre  h-screen justify-center flex items-center">
-      <p className="text-bold text-6xl text-center">
+    <header className="bg-mainBG  whitespace-pre  h-screen justify-center flex items-center ">
+      <p className="text-bold text-2xl sm:text-5xl lg:text-6xl text-center ">
       <Particle/>
         Hello, I'm Chelsea, <br/>
         I'm a fullstack web developer <br/>
         <a href="#about" className="text-lg border-solid border-2 border-[#DBB5B5] p-2">Check out my work</a>
       </p>
-      <p className=" justify-center flex ">
-
-
-      </p>
-
 
     </header>
-    <main className="bg-mainBG h-screen z-2" id="about">
-      <h1 className="text-bold text-6xl text-center">ABOUT ME</h1>
+    <div className="bg-mainBG h-screen z-2" id="about">
+      <h1 className="text-bold text-6xl  text-center">ABOUT ME</h1>
     <div className="container mx-auto columns-2">
   <p>
   What is Lorem Ipsum?
@@ -40,7 +35,7 @@ Where can I get some?
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
     </p>
 </div>
-    </main>
+    </div>
 
     </>
   );
