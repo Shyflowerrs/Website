@@ -41,7 +41,7 @@ const Particle = () => {
                                     mode: "push",
                                 },
                                 onHover: {
-                                    enable: true,
+                                    enable: false,
                                     mode: "repulse",
                                 },
                                 resize: true,
@@ -82,7 +82,7 @@ const Particle = () => {
                                     enable: true,
                                     area: 800,
                                 },
-                                value: 500, // Increase the number of particles
+                                value: 400, // Increase the number of particles
                             },
                             opacity: {
                                 value: 0.5,

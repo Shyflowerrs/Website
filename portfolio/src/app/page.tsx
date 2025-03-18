@@ -5,42 +5,75 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-<div>
-    <header className="bg-mainBG  whitespace-pre  h-screen justify-center flex items-center ">
-   
-      <p className="text-bold text-2xl sm:text-5xl lg:text-6xl text-center ">
-      <Particle/>
-        Hello, I'm Chelsea, <br/>
-        I'm a fullstack web developer <br/>
-        <a href="#about" className="text-lg border-solid border-2 border-[#DBB5B5] p-2">Check out my work</a>
-      </p>
-
-    </header>
-    </div>
-    <div className="bg-divBG   lg:h-screen mx-auto" id="about">
-      <h1 className="text-bold  text-2xl sm:text-5xl lg:text-6xl text-center">ABOUT ME</h1>
-
-      <img  className="float-right"src="/myself.jpg" width="300" height="300"></img>
-      <p className="container">
-
-  What is Lorem Ipsum? Just a small text test to see if My commits work.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-Where can I get some?
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-    </p>
-</div>
-
-
+      <div>
+        <header className="bg-mainBG whitespace-pre h-screen flex flex-col justify-center items-center text-center px-4">
+          {/* <Particle /> */}
+          <p className="text-bold font-bold text-2xl sm:text-4xl lg:text-5xl">
+            Hello, I'm Chelsea, <br />
+            I'm a fullstack web developer <br />
+            <a
+              href="#about"
+              className="text-lg border-solid border-2 border-[#DBB5B5] p-2 mt-4 inline-block"
+            >
+              Check out my work
+            </a>
+          </p>
+        </header>
+      </div>
+      <div
+        className="bg-divBG h-auto py-12 flex flex-col items-center justify-center mx-auto px-4"
+        id="about"
+      >
+        <h1 className="font-bold text-bold text-4xl sm:text-8xl lg:text-5xl mb-8">
+          About me
+        </h1>
+        <div className="flex flex-col lg:flex-row items-center lg:items-center lg:justify-center text-center lg:text-left max-w-screen-lg mx-auto">
+          <img
+            className="lg:mr-8 mb-6 lg:mb-0 rounded-full w-48 h-48 sm:w-64 sm:h-64 lg:w-72 lg:h-72"
+            src="/myself.jpg"
+            alt="Chelsea"
+          />
+          <div className="flex flex-col gap-6 max-w-prose">
+            <p className="text-black text-base sm:text-lg lg:text-xl">
+              Hey there! 👋 Welcome to my site. I'm a full-stack developer with
+              3 years of hands-on experience building robust, scalable, and
+              innovative web applications from the ground up. From writing
+              clean, efficient code to crafting smooth, user-friendly
+              interfaces, I thrive in every aspect of the development process!
+            </p>
+            <p className="text-black text-base sm:text-lg lg:text-xl">
+              What excites me most? Collaboration and teamwork! 🤝 I believe the
+              best solutions come from working together, brainstorming, and
+              bouncing ideas off brilliant minds. Whether I’m diving deep into
+              backend architecture or creating front-end experiences, I always
+              bring a positive attitude and a solution-oriented mindset to the
+              table.
+            </p>
+            <p className="text-black text-base sm:text-lg lg:text-xl">
+              💻 Tech Stack:
+              <br />
+              Frontend: React, HTML, CSS, JavaScript
+              <br />
+              Backend: Node.js, Express, C#, PHP
+              <br />
+              Database: PostgreSQL, MySQL
+              <br />
+              Tools: Git, AWS
+            </p>
+            <p className="text-black text-base sm:text-lg lg:text-xl">
+              Every line of code I write is a part of the bigger picture—making
+              impactful products that solve real problems. I’m constantly
+              learning, evolving, and pushing myself to be a better developer
+              every day. But what really drives me is being part of a team
+              that’s committed to growth, innovation, and success!
+              <br />
+              Let's connect if you're looking for a developer who’s not only
+              technically proficient but also loves collaborating, learning, and
+              sharing ideas with teammates to build something great together! 🚀
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
