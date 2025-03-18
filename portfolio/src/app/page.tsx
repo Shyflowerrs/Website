@@ -5,10 +5,40 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div>
+      {/* Navigation Bar */}
+      <nav className="bg-mainBG fixed top-0 left-0 w-full z-10 size-16 ">
+        <div className="max-w-screen-lg mx-auto px-4 py-4 flex justify-between items-center">
+          <h1 className="text-xl font-bold text-bold">Chelsea's Portfolio</h1>
+          <ul className="flex space-x-6 text-lg text-bold">
+            <li>
+              <a href="#about" className="hover:text-[#DBB5B5] transition">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="hover:text-[#DBB5B5] transition">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-[#DBB5B5] transition">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="#resume" className="hover:text-[#DBB5B5] transition">
+                Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* Main Content */}
+      <div className="pt-16">
         <header className="bg-mainBG whitespace-pre h-screen flex flex-col justify-center items-center text-center px-4">
           {/* <Particle /> */}
-          <p className="text-bold font-bold text-2xl sm:text-4xl lg:text-5xl">
+          <p className="font-bold text-2xl sm:text-4xl lg:text-5xl">
             Hello, I'm Chelsea, <br />
             I'm a fullstack web developer <br />
             <a
