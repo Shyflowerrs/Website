@@ -5,8 +5,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-
+<div>
     <header className="bg-mainBG  whitespace-pre  h-screen justify-center flex items-center ">
+   
       <p className="text-bold text-2xl sm:text-5xl lg:text-6xl text-center ">
       <Particle/>
         Hello, I'm Chelsea, <br/>
@@ -15,8 +16,8 @@ export default function Home() {
       </p>
 
     </header>
-
-    <div className="bg-mainBG   lg:h-screen mx-auto" id="about">
+    </div>
+    <div className="bg-divBG   lg:h-screen mx-auto" id="about">
       <h1 className="text-bold  text-2xl sm:text-5xl lg:text-6xl text-center">ABOUT ME</h1>
 
       <img  className="float-right"src="/myself.jpg" width="300" height="300"></img>

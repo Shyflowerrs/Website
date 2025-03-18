@@ -15,7 +15,8 @@ const config: Config = {
       },
       colors: {
         'mainBG': '#F1E5D1',
-        'bold': '#987070'
+        'bold': '#987070',
+        'divBG':'#FFFFFF',
       },
 
     },
