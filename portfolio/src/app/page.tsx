@@ -1,12 +1,15 @@
 import { text } from "stream/consumers";
-import Particle from "../components/Particles/Particles";
+import dynamic from "next/dynamic";
 import Image from "next/image";
-
+const Particle = dynamic(() => import("../components/Particles/Particles"), {
+  ssr: false,
+});
 export default function Home() {
   return (
     <>
+       
       {/* Navigation Bar */}
-      <nav className="bg-mainBG fixed top-0 left-0 w-full z-10 size-16">
+      <nav className="bg-mainBG sm:text-sm fixed top-0 left-0 w-full z-10 size-16">
         <div className="max-w-screen-lg mx-auto px-4 py-4 flex justify-between ">
           {/* Logo */}
           <div className="flex items-center">
@@ -18,7 +21,7 @@ export default function Home() {
               className="mr-2 hidden sm:block" // Add margin to the right of the logo
             />
           </div>
-          <ul className="flex space-x-7 text-sm text-bold ">
+          <ul className="flex space-x-2 text-sm text-bold ">
             <li>
             <b className="text-white mr-1">01. </b>
               <a href="#about" className="hover:text-[#DBB5B5] transition">
@@ -38,6 +41,7 @@ export default function Home() {
               </a>
             </li>
             <li>
+            <b className="text-white mr-1">04.</b> 
               <a href="/ChelseaResume.pdf" download="ChelseaResume.pdf" className="hover:text-[#DBB5B5] transition">
                 Resume
               </a>
@@ -48,26 +52,31 @@ export default function Home() {
 
       {/* Main Content */}
     
-      <div className="pt-16">
-        <header className="bg-mainBG whitespace-pre h-screen flex flex-col justify-center items-center text-center px-4">
-          {/* <Particle />  */}
-          <p className="font-bold text-bold text-2xl sm:text-3xl lg:text-5xl">
-            Hello, I'm Chelsea, 👋<br />
+
+     
+        <header className="h-screen pt-16 flex flex-col justify-center items-center text-center px-4">
+        <Particle />
+        <div className="z-10 relative">
+          <p className="z-1 font-bold text-bold text-2xl sm:text-3xl lg:text-5xl">
+     
+            Hello! I'm Chelsea, 👋<br />
             I'm a fullstack developer <br />
             <a
               href="#about"
-              className="text-lg border-solid border-2 border-[#DBB5B5] p-2 mt-4 inline-block"
+              className="bg-[#f5f2f1] text-lg border-solid border-2 border-[#DBB5B5] p-2 mt-4 inline-block"
             >
               Check out my work
             </a>
           </p>
+         </div>
         </header>
-      </div>
+        
+
       <div
-        className="bg-divBG h-auto py-12 flex flex-col items-center justify-center mx-auto px-4"
+        className="  bg-divBG  py-12 flex flex-col items-center justify-center mx-auto px-4"
         id="about"
       >
-        <h1 className="font-bold text-bold text-4xl sm:text-3xl lg:text-5xl mb-8">
+        <h1 className="font-bold text-bold text-2xl sm:text-3xl lg:text-3xl mb-3">
           About me
         </h1>
         <div className="flex flex-col lg:flex-row items-center lg:items-center lg:justify-center text-center lg:text-left max-w-screen-lg mx-auto">
@@ -118,7 +127,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="bg-mainBG h-auto py-12 flex flex-col items-center justify-center mx-auto px-4"
+        className="h-screen bg-mainBG h-auto py-12 flex flex-col items-center justify-center mx-auto px-4"
         id="contact"
       >
         <h1 className="font-bold text-bold text-4xl sm:text-3xl lg:text-5xl mb-8">
