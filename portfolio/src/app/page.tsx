@@ -9,7 +9,7 @@ export default function Home() {
     <>
        
       {/* Navigation Bar */}
-      <nav className="bg-mainBG sm:text-sm fixed top-0 left-0 w-full z-10 size-16">
+      <nav className="bg-mainBG sm:text-sm fixed top-0 left-0 w-full z-10 size-14">
         <div className="max-w-screen-lg mx-auto px-4 py-4 flex justify-between ">
           {/* Logo */}
           <div className="flex items-center">
@@ -134,10 +134,11 @@ export default function Home() {
           Contact Me
         </h1>
         <form
-          action="https://formsubmit.co/chelseah@live.ca"
+          action="https://api.web3forms.com/submit"
           method="POST"
           className="flex flex-col gap-6 w-full max-w-md"
         >
+          <input type="hidden" name="access_key" value="148b4a31-6309-4e9c-b9dc-22ddcd213a4a"></input>
           {/* Name Field */}
           <div>
             <label htmlFor="name" className="block text-lg font-medium text-black">
@@ -148,7 +149,7 @@ export default function Home() {
               id="name"
               name="name"
               required
-              className="w-full border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-[#DBB5B5]"
+              className="w-full text-black border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-[#DBB5B5]"
             />
           </div>
 
@@ -162,7 +163,7 @@ export default function Home() {
               id="email"
               name="email"
               required
-              className="w-full border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-[#DBB5B5]"
+              className="w-full text-black border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-[#DBB5B5]"
             />
           </div>
 
@@ -176,7 +177,7 @@ export default function Home() {
               name="message"
               rows={5}
               required
-              className="w-full border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-[#DBB5B5]"
+              className="w-full text-black border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-[#DBB5B5]"
             ></textarea>
           </div>
 
